@@ -1,0 +1,264 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("../media/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.header {
+  border: 1px blue solid;
+  background-color: rgba(184, 226, 33, 0.6);
+  width: 100vw;
+  height: 15vh;
+  display: none;
+}
+
+
+
+.main {
+  display: flex;
+  height: 70%;
+  visibility: none;
+  display: none;
+}
+
+.mobile-header {
+  /* border: 6px rgb(255, 222, 4) solid; */
+  background-color: rgb(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 30vh;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile-header h1 
+{
+  font-size: calc(28px + 2vh);
+  letter-spacing: 2.5px;
+  padding: 1vh 3vh;
+  border: none;
+  border-radius:50px;
+  border: 3px solid rgba(222, 255, 103, 0.9)
+}
+
+.mobile-main {
+  width: 100vw;
+  height: 60vh;
+  /* border: 4px red solid; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: calc(50px + 1vh);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Young Serif", Courier, monospace;
+  font-family: "Righteous", Courier, monospace;
+  font-size: calc(30px + 2vh);
+  letter-spacing: 2px;
+  color: rgb(250, 249, 248);
+  border: 2px, solid, ;
+  border-radius: 45px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 4vh;
+  padding-left: 4vh;
+  border: 3px rgba(222, 255, 103, 0.9) solid;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(10px + 0.7vh);
+  color: rgb(250, 249, 248);
+  padding: 0.25vh;
+}
+
+h3 {
+  color: rgb(250, 249, 248);
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: calc(14px + 1vw);
+  font-family: "DM Mono", monospace;
+  color: rgb(255, 232, 192);
+  color: rgb(192, 224, 255);
+}
+
+button {
+  font-size: calc(12px + 0.8vw);
+  font-family: "DM Mono", monospace;
+  width: calc(280px + 1vh);
+  position: relative;
+  background-color: #272727;
+
+  background: rgb(231,142,26);
+background: radial-gradient(circle, rgba(231,142,26,1) 0%, rgba(226,132,8,1) 27%, rgba(226,132,8,1) 50%, rgba(226,132,8,1) 75%, rgba(226,132,8,1) 100%);
+  color: white;
+  /* color: rgb(255, 232, 192);
+  color: rgba(225, 255, 116, 0.9); */
+
+  font-size: calc(9px + 1vh);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border: 4px black solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.mobile-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 7px solid blue; */
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 0;
+  height: 10vh;
+  width: 100vw;
+  z-index: 2;
+}
+.mobile-footer a {
+  color: rgb(255, 232, 192);
+  color: rgb(252, 192, 255);
+  color: rgba(222, 255, 103, 0.9);
+  font-size: calc(12px + 0.8vw);
+  font-family: "DM Mono", monospace;
+  text-decoration: none;
+  padding: 2vh;
+}
+
+.mobile-footer a:hover {
+ text-decoration: underline;
+}
+
+.mobile-img {
+  width: 100%;
+  height: auto;
+}
+
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+.occupation
+{
+    color: rgb(192, 224, 255);
+    color: rgb(255, 232, 192);
+    color: rgb(233, 156, 39);
+    color: rgb(231,142,26);
+}
+
+.stack
+{
+    width: 100vw;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.stack p 
+{
+    font-size:calc(11px + 1vh);
+}
+
+#colored
+{
+    color: rgb(252, 192, 255);
+}
+
+#btn1
+{
+ background-color: rgb(245, 245, 245);
+ background-color: rgb(233, 156, 39);
+ color: rgb(25, 25, 25);
+}
+
+#btn2
+{
+ background-color: rgb(245, 245, 245);
+ background-color: rgb(225, 174, 255);
+ color: rgb(83, 14, 157);
+ background-color: rgb(253, 179, 68);
+ background-color: rgb(233, 156, 39);
+ color: rgb(25, 25, 25);
+}
+
+@media (max-width: 756px) {
+
+  .mobile-header
+  {
+    height: 35vh;
+  }
+
+  .mobile-footer
+  {
+    height: 20vh;
+    padding-bottom: 5vh;
+  }
+
+  .mobile-main
+  {
+    height: 45vh;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+
+.mobile-header 
+{
+height: 40vh;
+}
+
+.mobile-main
+{
+height: 35vh;
+}
+
+.mobile-footer 
+{
+ height: 25vh;
+}
+
+.mobile-header h1 
+{
+  font-size: calc(28px + 2vh);
+  letter-spacing: 2.5px;
+  padding-bottom: 3vh;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 3px solid rgba(222, 255, 103, 0.9)
+}
+
+ }
